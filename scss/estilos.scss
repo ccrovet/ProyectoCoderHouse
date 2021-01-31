@@ -1,0 +1,310 @@
+@import "colores";
+@import "fuentes";
+
+
+#page {
+
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-columns: 200px 1fr 100px;
+    grid-template-rows: 50px 20px 1fr 100 px;
+    grid-template-areas: "head head head"
+                         "nav main main"
+                         "nav main main"   
+                         "foot foot foot"                         
+ }
+
+ #page header {
+     /* background-color: rgb(66, 179, 38); */
+     grid-area: head;
+     /* grid-template-columns: 200px 1fr 20px;
+     grid-template-areas: "head head head"      */
+     background-image: linear-gradient(to top, green , lightgreen); 
+     margin: 1px; 
+     }
+
+
+ #page header div :not(.logoitems) {
+    grid-area: head;    
+}
+
+
+ #page nav {
+    background-color:$c_nav_letra;  
+    grid-area: nav;
+    display: flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 2px;
+ }
+
+ #page nav div {
+    background-color: $c_fondo_nav;
+}
+
+
+ #page main {
+    background-color:$c_Main_fondo;    
+    grid-area: main;
+    margin: 2px;
+    padding: 2px;
+ }
+
+ #page footer {
+    grid-area: foot;
+ }
+
+ .logo {
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    margin: 10px;
+}
+
+.logoitems {
+    width: 200px;
+}
+
+.tituloprincipal {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+h1 {
+    color: $c_titulo_principal;
+    font-family: $fuente_titulo_principal;
+    font-size: 80px;
+    }
+
+    .negrita {
+        font-weight: bolder;
+    }
+
+    section{
+        color: white;
+        /*background-color: violet;*/
+        /* margin: 3px; */
+        margin-bottom: 30px;
+       }
+       
+       
+       article {
+           color: $c_articulo_letra;
+           line-height: 18px;
+           background-color: $c_articulo_fondo;
+           position: relative;    
+           display: inline-grid;
+           width: 33%;
+       }
+
+
+    footer {
+        background-image: linear-gradient(to bottom, green , lightgreen);     
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:space-between;
+        height: 300px;
+        margin: 1px; 
+    }
+
+    .imagenfooter {    
+        background-image: url("../images/girasol.png");
+        height: 300px;
+        width: auto;
+    }
+
+    #articulos {
+        margin-top: 2 px;
+        margin-left: 10%;
+        margin-right: 10%;   
+        margin-bottom: 2 px;
+     }
+     
+     
+     #tablaproductos{
+         border-style: dotted;
+         background-color: $c_tablaproductos_fondo;
+         color: $c_tablaproductos_letra;
+         /* margin-left: 30%; */
+     }    
+
+
+/* .form-group 
+    {   
+        margin-left:10%;
+        width: 600px;
+    } */
+    .bigicon {
+        font-size: 35px;
+        color: #1baa4b;
+    }
+
+    .colorbotonformulario
+    {
+        background-color: #1baa4b;
+    }
+
+
+#seccionContacto 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        margin-top: 80px; 
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    ul {
+        text-align: center;
+        list-style: none;
+        font-size: 0;
+        list-style-position: outside;
+        margin: 0;
+        padding: 0;
+
+        li
+         {
+              ul {
+            position: absolute;
+            display: none;
+            width: 100%;
+                  }
+                }        
+        
+        ul 
+         { 
+            li {
+            display: block;
+            width: 100%;
+            }
+         }
+        
+        ul li:hover ul {
+            display: block;
+        }
+
+
+
+    }
+    
+    li {
+        display: block;
+        width: 100%;
+        position: relative;
+        font-size: 35px;
+        border: solid 2px #16be4e;
+        background-color:  #16be4e;    
+    }
+    
+.serviciosul {
+    color: black;
+    list-style: initial;
+    list-style: square;
+}
+
+.serviciosli {
+    color: black;
+    text-align: left;
+    list-style: none;
+    border: solid 2px #16be4e;
+    background-color:  #16be4e;    
+}
+
+.serviciosli:hover{
+    background-color:  #16be4e;
+    transform: scale(1.1);
+   }    
+
+
+    ul li ul {
+        position: absolute;
+        display: none;
+        width: 100%;
+    }
+    
+    ul ul li {
+        display: block;
+        width: 100%;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+    
+    a {
+        text-decoration:  none;
+        color: white;
+    }
+    
+    li:hover{
+     background-color:  #05250f;
+    //  transform: skew(-10deg)  scale(1.2);
+    }    
+
+    .imagenzoom {
+        width: 100%;
+        height: auto;
+      }
+
+
+      td {
+          padding: 1px;
+          margin: 1px;
+      }
+
+    .imagencontainer {
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .imagenzoom:hover  {
+        transform: scale(2);
+        display: block;
+        position: relative;
+        transition: .3s ease;
+        overflow: hidden ;
+    }
+
+        .imagenzoom:not(:hover)        {
+            /* transform: scale(1); */
+            transition: .1s ease; 
+        }  
+
+
+    .botoncompra {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .botoncompra:hover {background-color: #3e8e41}
+      
+      .botoncompra:active {
+        background-color: orange;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+
+.miestilo {
+        background-color: green;
+ }
+ @media (max-width: 768px) {
+ .miestilo {
+ background-color: red;
+ }
+ }
+ 
