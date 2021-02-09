@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mana - Almacen Natural</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="css/navegacion.css">    
+</head>
+<body>
+    <!-- <section id="page" class="miestilo"> -->
+        <header class="headerNav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#">
+                <img src="images/manalogo.png" style="width:40px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+          </header>
+
+
+          <main>    
+              <div class="fondo">
+        <section id="seccionContacto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>  
+                                    <legend class="text-center header">Escribinos tu consulta</legend>                        
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-envelope bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="E-mail" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-phone bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Teléfono" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-menu-hamburger bigicon"></i></span>                                                
+                                        <div class="col-md-8">
+                                            <div class="dropdown">
+                                                <button type="button" class="btn btn-primary dropdown-toggle colorbotonformulario" data-toggle="dropdown">
+                                                    Tipo de Consulta:
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Productos</a>
+                                                    <a class="dropdown-item" href="#">Servicios</a>
+                                                    <a class="dropdown-item" href="#">Otras...</a>                                                    
+                                                </div>
+                                            </div>                                                    
+                                        </div>
+                                    </div>
+
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="glyphicon glyphicon-edit bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Ingresanos tu consulta acá..." rows="7"></textarea>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg colorbotonformulario">Enviar Formulario</button>
+                                            <button type="reset" class="btn btn-primary btn-lg colorbotonformulario">Limpiar Formulario</button>                                                        
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>                    
+    </div>
+</main>
+
+        <footer  class="negrita">
+            <div class="logo">
+                <div><img src="images/manalogo.png" alt=""/> </div>
+                <div><img  class="rounded-circle" src="images/girasol.png" alt="" width="300" height=auto alt="imagen pie"></div>
+                <!-- <div class="imagenfooter">Imagen</div>                 -->
+                <div></h3>
+                    Redes Sociales
+                    <div>
+                        <a href="https://www.instagram.com/manaalmacennatural/">
+                            <img class="rounded-circle" src="images/instagram.png" width=30  heigth=auto alt="">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100015367862494"> 
+                            <img class="rounded-circle" src="images/facebook.png" width=30  heigth=auto  alt="">
+                        </a>
+                    </div>
+                     </h3></div>
+            </div>
+            <div class="logo">
+                <div  class="logoitems">Opiniones de Usuario</div>
+                <div  class="logoitems">Como comprar</div> 
+            </div>
+        </footer>
+    <!-- </section> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" id="">
+        const searchFocus = document.getElementById('search-focus');
+        const keys = [
+          { keyCode: 'AltLeft', isTriggered: false },
+          { keyCode: 'ControlLeft', isTriggered: false },
+        ];
+        
+        window.addEventListener('keydown', (e) => {
+          keys.forEach((obj) => {
+            if (obj.keyCode === e.code) {
+              obj.isTriggered = true;
+            }
+          });
+        
+          const shortcutTriggered = keys.filter((obj) => obj.isTriggered).length === keys.length;
+        
+          if (shortcutTriggered) {
+            searchFocus.focus();
+          }
+        });
+        
+        window.addEventListener('keyup', (e) => {
+          keys.forEach((obj) => {
+            if (obj.keyCode === e.code) {
+              obj.isTriggered = false;
+            }
+          });
+        });
+        </script>
+  
+</body>
+</html>

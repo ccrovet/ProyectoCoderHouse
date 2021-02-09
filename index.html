@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="css/estilos.css">    
+    <link rel="stylesheet" href="css/styleslyck.css">
 </head>
 <body>
     <section id="page" class="miestilo">
@@ -23,7 +24,7 @@
                     <div class="logoitems"> Busqueda</div>
                 </div>
             <div class="tituloprincipal animate__animated animate__pulse animate__delay-2s animate__repeat-1 animate__slower ">
-                <h1>Mana - Almacen Natural - Nueva Version PC de escritorio</h1>
+                <h1>Mana - Almacen Natural</h1>
             </div>
         </header>
         <nav>
@@ -36,6 +37,12 @@
                 </ul>
         </nav>
         <main>
+            <div class="thing" id="wrapper">
+                <div><img alt="slider image" src="images/comidaSana1.png"></div>
+                <div><img alt="slider image" src="images/comidaSana2.png"></div>        
+                <div><img alt="slider image" src="images/comidaSana3.png"></div>                
+                <!-- <div><img alt="slider image" src="https://i.postimg.cc/QtDg01Nr/3.jpg"></div> -->
+        </div>
             <section  id="articulos">
                 <h2>Nuestros Productos</h2>        
                 <br>    
@@ -182,6 +189,19 @@
           });
         });
         </script>
-  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js">
+</script> 
+<script>
+       $(document).ready(function(){
+          $('.thing').slick({
+              dots: true,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 2000
+          }) 
+       });
+</script>
 </body>
 </html>

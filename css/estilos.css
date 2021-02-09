@@ -4,7 +4,10 @@
   height: 250px;
   grid-template-columns: 200px 1fr 100px;
   grid-template-rows: 50px 20px 1fr 100 px;
-  grid-template-areas: "head head head" "nav main main" "nav main main"    "foot foot foot"; }
+  grid-template-areas: "head head head"
+ "nav main main"
+ "nav main main"   
+ "foot foot foot"; }
 
 #page header {
   /* background-color: rgb(66, 179, 38); */
@@ -37,6 +40,17 @@
 
 #page footer {
   grid-area: foot; }
+
+  .headerNav {
+    background: url(../images/campotrigo.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+.headerNav .navbar {
+    background-color: transparent !important;
+  }
+
 
 .logo {
   display: flex;

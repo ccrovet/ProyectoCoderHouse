@@ -1,0 +1,24 @@
+.headerNav {
+    /* background: url(../images/campotrigo.jpg) no-repeat center; */
+    /* background-size: cover; */
+     min-height: 10vh;  
+  }
+
+/* .headerNav .navbar {
+    background-color: transparent !important;
+  } */
+
+
+.fondo {
+    background: url(../images/campotrigo.jpg) no-repeat center;
+    /* background-size: cover; */
+    /* min-height: 100vh; */
+}
+
+  #seccionContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%; }
