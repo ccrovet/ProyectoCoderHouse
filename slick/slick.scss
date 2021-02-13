@@ -13,6 +13,7 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    //  margin-bottom: 100px;
 }
 .slick-list {
     position: relative;
@@ -97,4 +98,11 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.slider-principal
+{
+    margin-top: 30px;
+    margin-bottom: 100px;
 }

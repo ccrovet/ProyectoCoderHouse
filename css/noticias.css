@@ -48,7 +48,8 @@ button {
 .posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2.5rem; }
+  grid-gap: 2.5rem;
+  margin-bottom: 100px; }
   @media (max-width: 1140px) {
     .posts {
       grid-template-columns: repeat(2, 1fr); } }
@@ -84,9 +85,9 @@ button {
     opacity: 0.15;
     transition: 2s cubic-bezier(0, 0.6, 0.2, 1); }
   .post__image--1:before {
-    background-image: url("https://images.unsplash.com/photo-1510951459752-aac634df6e86?h=240&ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=50bdf8b5068e794a82c849cc7e269ed3"); }
+    background-image: url("../images/superfood.png"); }
   .post__image--2:before {
-    background-image: url("https://images.unsplash.com/photo-1529392960549-df4af50eac23?h=240&ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b482040f9d3a25a5e5352948f68f3a0e"); }
+    background-image: url("../images/cincohabitos.png"); }
   .post__image--3:before {
     background-image: url("https://images.unsplash.com/photo-1506258998-82810ddc75a3?h=240&ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=68da264c24bc024a0b2ff92c349e89ed"); }
   .post__image--4:before {
@@ -141,3 +142,13 @@ button {
 .post:hover .post__image:before {
   transform: scale(1.1);
   filter: blur(10px); }
+
+  .seccionContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #5cc57f; }
+  
